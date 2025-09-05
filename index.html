@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>codingcamp-1-sep-2025-Riclown03</title>
+
+    <!-- connect css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <div class="container">
+        <!-- header -->
+        <header>   
+            <h1>Todo List</h1>
+        </header>
+
+        <main>
+            <div class="form">
+                <!-- pengisian task -->
+                <section id="todo-input-section" class="todo-input-section">
+                    <form>
+                        <input type="text" id="todo-input" placeholder="Add a new task...">
+                        <input type="date" id="todo--dateinput">
+                        <button id="add-todo-button">+</button>
+                    </form>
+                </section>
+
+                <!-- filter or delete task -->
+                <section class="filter-and-delete">
+                    <button id="filter-tasks-button">
+                        Filter Tasks
+                    </button>
+                    <button id="delete-all-button">
+                        Delete all
+                    </button>
+                </section>
+
+                <!-- list task -->
+                <section class="list-todo">
+                    <!-- judul list -->
+                    <h2 class="font-bold">List of Todo</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Task</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="todo-list">
+                                <tr><td colspan="4">No task found</td></tr>
+                            </tbody>
+                        </table>
+                </section>
+            </div>
+
+        </main>
+        
+        <!-- footer -->
+        <footer>
+            <p>&copy; 2025 Riclown Todo List</p>
+        </footer>
+    </div>
     
+
+    <!-- connect java -->
+     <script src="js/script.js"></script>
 </body>
 </html>
+
